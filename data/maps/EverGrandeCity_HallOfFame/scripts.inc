@@ -61,6 +61,9 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale::
 EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
 	setrespawn HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F
 	fadescreenspeed FADE_TO_BLACK, 24
+	setflag FLAG_SHOWN_EON_TICKET
+	setflag FLAG_SHOWN_AURORA_TICKET
+	setflag FLAG_SHOWN_OLD_SEA_MAP
 	special GameClear
 	waitstate
 	releaseall

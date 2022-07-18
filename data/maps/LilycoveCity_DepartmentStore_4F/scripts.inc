@@ -28,6 +28,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
 	.2byte ITEM_TM38  @ Fire Blast
 	.2byte ITEM_TM25  @ Thunder
 	.2byte ITEM_TM14  @ Blizzard
+	.2byte ITEM_TM62  @ Focus Blast
 	.2byte ITEM_TM15  @ Hyper Beam
 	.2byte ITEM_NONE
 	release
@@ -63,7 +64,7 @@ LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
 	.string "There are so many different kinds of\n"
 	.string "TM moves.\p"
-	.string "A catalog I read said there are fifty\n"
+	.string "A catalog I read said there are 64\n"
 	.string "different kinds.$"
 
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:

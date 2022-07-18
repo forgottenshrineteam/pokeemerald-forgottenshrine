@@ -99,7 +99,7 @@ Route114_EventScript_ItemProtein::
 	end
 
 Route114_EventScript_ItemEnergyPowder::
-	finditem ITEM_ENERGY_POWDER
+	finditem ITEM_TM61
 	end
 
 Route115_EventScript_ItemSuperPotion::
@@ -167,7 +167,7 @@ Route119_EventScript_ItemZinc::
 	end
 
 Route119_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
+	finditem ITEM_TM59
 	end
 
 Route119_EventScript_ItemLeafStone::
@@ -323,7 +323,7 @@ LilycoveCity_EventScript_ItemMaxRepel::
 	end
 
 MossdeepCity_EventScript_ItemNetBall::
-	finditem ITEM_NET_BALL
+	finditem ITEM_TM56
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
@@ -347,7 +347,7 @@ RusturfTunnel_EventScript_ItemPokeBall::
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::
-	finditem ITEM_MAX_ETHER
+	finditem ITEM_TM54
 	end
 
 GraniteCave_1F_EventScript_ItemEscapeRope::
@@ -367,11 +367,11 @@ GraniteCave_B2F_EventScript_ItemRareCandy::
 	end
 
 JaggedPass_EventScript_ItemBurnHeal::
-	finditem ITEM_BURN_HEAL
+	finditem ITEM_TM_60
 	end
 
 FieryPath_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+	finditem ITEM_MAGMARIZER
 	end
 
 FieryPath_EventScript_ItemTM06::
@@ -407,7 +407,7 @@ NewMauville_Inside_EventScript_ItemEscapeRope::
 	end
 
 NewMauville_Inside_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+	finditem ITEM_ELECTIRIZER
 	end
 
 NewMauville_Inside_EventScript_ItemFullHeal::
@@ -431,7 +431,7 @@ AbandonedShip_Rooms2_B1F_EventScript_ItemDiveBall::
 	end
 
 AbandonedShip_Room_B1F_EventScript_ItemTM13::
-	finditem ITEM_TM13
+	finditem ITEM_TM21
 	end
 
 AbandonedShip_Rooms2_1F_EventScript_ItemRevive::
@@ -499,11 +499,11 @@ MtPyre_5F_EventScript_ItemLaxIncense::
 	end
 
 MtPyre_6F_EventScript_ItemTM30::
-	finditem ITEM_TM30
+	finditem ITEM_TM58
 	end
 
 MtPyre_Exterior_EventScript_ItemMaxPotion::
-	finditem ITEM_MAX_POTION
+	finditem ITEM_REAPER_CLOTH
 	end
 
 MtPyre_Exterior_EventScript_ItemTM48::
@@ -523,11 +523,7 @@ AquaHideout_B1F_EventScript_ItemMaxElixir::
 	end
 
 AquaHideout_B2F_EventScript_ItemNestBall::
-	finditem ITEM_NEST_BALL
-	end
-
-AquaHideout_B2F_EventScript_ItemMasterBall::
-	finditem ITEM_MASTER_BALL      // Unused
+	finditem ITEM_TM49
 	end
 
 Route119_EventScript_ItemNugget::
@@ -560,6 +556,10 @@ ShoalCave_LowTideIceRoom_EventScript_ItemTM07::
 
 ShoalCave_LowTideIceRoom_EventScript_ItemNeverMeltIce::
 	finditem ITEM_NEVER_MELT_ICE
+	end
+
+ShoalCave_LowTideIceRoom_EventScript_ItemIceStone::
+	finditem ITEM_ICE_STONE
 	end
 
 SeafloorCavern_Room9_EventScript_ItemTM26::
@@ -607,11 +607,11 @@ VictoryRoad_1F_EventScript_ItemMaxElixir::
 	end
 
 VictoryRoad_1F_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_PROTECTOR
 	end
 
 VictoryRoad_B1F_EventScript_ItemTM29::
-	finditem ITEM_TM29
+	finditem ITEM_TM57
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::

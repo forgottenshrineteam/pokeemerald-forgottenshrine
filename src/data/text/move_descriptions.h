@@ -1622,7 +1622,7 @@ static const u8 sBugBuzzDescription[] = _(
     "may lower Sp. Def.");
 
 static const u8 sDragonPulseDescription[] = _(
-    "Generates a shock wave to\n"
+    "Generates a shockwave to\n"
     "damage the foe.");
 
 static const u8 sDragonRushDescription[] = _(
