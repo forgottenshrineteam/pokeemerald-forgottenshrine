@@ -132,7 +132,7 @@ Route119_EventScript_DefeatedBrendan::
 	end
 
 Route119_EventScript_GiveFlyHM::
-	giveitem ITEM_HM02
+	giveitem ITEM_TM67
 	setflag FLAG_RECEIVED_HM02
 	return
 
@@ -581,7 +581,7 @@ Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you FLY by catching a whole\n"
 	.string "flock of BIRD POKéMON, and then\l"
 	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
+	.string "But it turns out there's a TM move\n"
 	.string "called FLY!\p"
 	.string "I wish I'd known about that a long\n"
 	.string "time ago…$"

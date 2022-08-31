@@ -19,6 +19,8 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ETHER
+	.2byte ITEM_ELIXIR
 	.2byte ITEM_REVIVE
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_X_SPEED

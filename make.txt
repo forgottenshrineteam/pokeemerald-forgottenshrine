@@ -1,0 +1,92 @@
+tools/agbcc/bin/agbcc <flags> -o build/emerald/src/pokemon.o src/pokemon.c
+In file included from src/pokemon.c:2041:
+src/data/pokemon/tmhm_learnsets.h:59: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:59: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:85: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:85: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:303: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:303: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:336: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:336: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:910: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:910: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:929: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:929: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1433: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1433: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1587: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1587: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1711: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1711: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1838: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1838: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1854: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1854: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1873: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:1873: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2134: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2134: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2158: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2158: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2184: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2184: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2228: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2228: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2359: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2359: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2379: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2379: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2404: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2404: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2908: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2908: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2940: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:2940: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3367: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3367: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3395: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3395: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3493: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:3493: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4706: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4706: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4731: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4731: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4958: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4958: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4977: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4977: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4999: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:4999: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:5016: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:5016: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:5352: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:5352: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:7157: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:7157: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:7245: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:7245: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8014: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8014: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8034: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8034: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8258: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8258: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8278: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8278: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8587: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8587: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8610: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:8610: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9105: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9105: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9392: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9392: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9821: warning: left shift count >= width of type
+src/data/pokemon/tmhm_learnsets.h:9821: warning: left shift count >= width of type
+tools/ramscrgen/ramscrgen COMMON sym_common.txt ENGLISH -c build/emerald/src,common_syms > build/emerald/sym_common.ld
+cd build/emerald && sed "s#tools/#../../tools/#g" ../../ld_script.txt > ld_script.ld
+cd build/emerald && arm-none-eabi-ld -Map ../../pokeemerald.map -T ld_script.ld -o ../../pokeemerald.elf <objects> <lib>
+tools/gbafix/gbafix pokeemerald.elf -t"POKEMON EMER" -cBPEE -m01 -r0 --silent
+arm-none-eabi-objcopy -O binary pokeemerald.elf pokeemerald.gba
+tools/gbafix/gbafix pokeemerald.gba -p --silent

@@ -53,7 +53,7 @@ PacifidlogTown_House2_EventScript_PutInEffort::
 
 PacifidlogTown_House2_EventScript_GiveFrustration::
 	msgbox PacifidlogTown_House2_Text_ViciousPokemonTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM21
+	giveitem ITEM_SOOTHE_BELL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK
 	special SetPacifidlogTMReceivedDay
@@ -114,22 +114,22 @@ PacifidlogTown_House2_Text_PutInSomeMoreEffort:
 	.string "some more effort.$"
 
 PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
-	.string "It has a vicious look to it.\p"
-	.string "A frightening POKéMON like that\n"
-	.string "deserves a TM like this.$"
+	.string "It doesn't seem to like you at all.\p"
+	.string "Maybe you should try making it hold\n"
+	.string "an item like this.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
 	.string "If a POKéMON likes you a lot, RETURN's\n"
 	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
-	.string "power goes up.$"
+	.string "If it doesn't like you, a SOOTHE BELL\n"
+	.string "will help it get accustomed to you.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "Oh, yes. In about {STR_VAR_1} or so days,\n"
-	.string "I should be getting a good TM or two.\p"
+	.string "I should be getting some good items.\p"
 	.string "You should come see me then.\n"
-	.string "I'll give you a TM that's suitable for\l"
-	.string "your POKéMON.$"
+	.string "I'll give you something that's suitable\l"
+	.string "for your POKéMON.$"
 
 PacifidlogTown_House2_Text_Rurii:
 	.string "AZURILL: Rurii.$"

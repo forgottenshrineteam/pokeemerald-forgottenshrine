@@ -695,7 +695,7 @@ static void BuildEggMoveset(struct Pokemon *egg, struct BoxPokemon *father, stru
         {
             for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
             {
-                if (sHatchedEggFatherMoves[i] == ItemIdToBattleMoveId(ITEM_TM01_FOCUS_PUNCH + j) && CanMonLearnTMHM(egg, j))
+                if (sHatchedEggFatherMoves[i] == ItemIdToBattleMoveId(ITEM_TM01_WILL_O_WISP + j) && CanMonLearnTMHM(egg, j))
                 {
                     if (GiveMoveToMon(egg, sHatchedEggFatherMoves[i]) == MON_HAS_MAX_MOVES)
                         DeleteFirstMoveAndGiveMoveToMon(egg, sHatchedEggFatherMoves[i]);
@@ -741,45 +741,45 @@ void RejectEggFromDayCare(void)
     RemoveEggFromDayCare(&gSaveBlock1Ptr->daycare);
 }
 
-static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
-{
-    u16 motherItem, fatherItem;
-    motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
-    fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
+//static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
+//{
+    //u16 motherItem, fatherItem;
+    //motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
+    //fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
 
-    if (*species == SPECIES_WYNAUT && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
-        *species = SPECIES_WOBBUFFET;
-    else if (*species == SPECIES_AZURILL && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
-        *species = SPECIES_MARILL;
-    #ifdef SPECIES_MUNCHLAX
-        else if (*species == SPECIES_MUNCHLAX && motherItem != ITEM_FULL_INCENSE && fatherItem != ITEM_FULL_INCENSE)
-            *species = SPECIES_SNORLAX;
-    #endif
-    #ifdef SPECIES_HAPPINY
-        else if (*species == SPECIES_HAPPINY && motherItem != ITEM_LUCK_INCENSE && fatherItem != ITEM_LUCK_INCENSE)
-            *species = SPECIES_CHANSEY;
-    #endif
-    #ifdef SPECIES_MIME_JR
-        else if (*species == SPECIES_MIME_JR && motherItem != ITEM_ODD_INCENSE && fatherItem != ITEM_ODD_INCENSE)
-            *species = SPECIES_MR_MIME;
-    #endif
-    #ifdef SPECIES_CHINGLING
-        else if (*species == SPECIES_CHINGLING && motherItem != ITEM_PURE_INCENSE && fatherItem != ITEM_PURE_INCENSE)
-            *species = SPECIES_CHIMECHO;
-    #endif
-    #ifdef SPECIES_BONSLY
-        else if (*species == SPECIES_BONSLY && motherItem != ITEM_ROCK_INCENSE && fatherItem != ITEM_ROCK_INCENSE)
-            *species = SPECIES_SUDOWOODO;
-    #endif
-    #ifdef SPECIES_BUDEW
-        else if (*species == SPECIES_BUDEW && motherItem != ITEM_ROSE_INCENSE && fatherItem != ITEM_ROSE_INCENSE)
-            *species = SPECIES_ROSELIA;
-    #endif
-    #ifdef SPECIES_MANTYKE
-        else if (*species == SPECIES_MANTYKE && motherItem != ITEM_WAVE_INCENSE && fatherItem != ITEM_WAVE_INCENSE)
-            *species = SPECIES_MANTINE;
-    #endif
-}
+    //if (*species == SPECIES_WYNAUT && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        //*species = SPECIES_WOBBUFFET;
+    //else if (*species == SPECIES_AZURILL && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+        //*species = SPECIES_MARILL;
+    //#ifdef SPECIES_MUNCHLAX
+        //else if (*species == SPECIES_MUNCHLAX && motherItem != ITEM_FULL_INCENSE && fatherItem != ITEM_FULL_INCENSE)
+            //*species = SPECIES_SNORLAX;
+    //#endif
+    //#ifdef SPECIES_HAPPINY
+        //else if (*species == SPECIES_HAPPINY && motherItem != ITEM_LUCK_INCENSE && fatherItem != ITEM_LUCK_INCENSE)
+            //*species = SPECIES_CHANSEY;
+    //#endif
+    //#ifdef SPECIES_MIME_JR
+        //else if (*species == SPECIES_MIME_JR && motherItem != ITEM_ODD_INCENSE && fatherItem != ITEM_ODD_INCENSE)
+            //*species = SPECIES_MR_MIME;
+    //#endif
+    //#ifdef SPECIES_CHINGLING
+        //else if (*species == SPECIES_CHINGLING && motherItem != ITEM_PURE_INCENSE && fatherItem != ITEM_PURE_INCENSE)
+            //*species = SPECIES_CHIMECHO;
+    //#endif
+    //#ifdef SPECIES_BONSLY
+        //else if (*species == SPECIES_BONSLY && motherItem != ITEM_ROCK_INCENSE && fatherItem != ITEM_ROCK_INCENSE)
+            //*species = SPECIES_SUDOWOODO;
+    //#endif
+    //#ifdef SPECIES_BUDEW
+        //else if (*species == SPECIES_BUDEW && motherItem != ITEM_ROSE_INCENSE && fatherItem != ITEM_ROSE_INCENSE)
+            //*species = SPECIES_ROSELIA;
+    //#endif
+    //#ifdef SPECIES_MANTYKE
+        //else if (*species == SPECIES_MANTYKE && motherItem != ITEM_WAVE_INCENSE && fatherItem != ITEM_WAVE_INCENSE)
+            //*species = SPECIES_MANTINE;
+    //#endif
+//}
 
 static void GiveVoltTackleIfLightBall(struct Pokemon *mon, struct DayCare *daycare)
 {
@@ -843,7 +843,7 @@ static void _GiveEggFromDaycare(struct DayCare *daycare)
     bool8 isEgg;
 
     species = DetermineEggSpeciesAndParentSlots(daycare, parentSlots);
-    AlterEggSpeciesWithIncenseItem(&species, daycare);
+    //AlterEggSpeciesWithIncenseItem(&species, daycare);
     SetInitialEggData(&egg, species, daycare);
     InheritIVs(&egg, daycare);
     BuildEggMoveset(&egg, &daycare->mons[parentSlots[1]].mon, &daycare->mons[parentSlots[0]].mon);

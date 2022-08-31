@@ -14206,7 +14206,7 @@ Move_TRIPLE_AXEL::
 	end @to do:
 
 Move_DUAL_WINGBEAT::
-	end @to do:
+	goto Move_WING_ATTACK
 
 Move_SCORCHING_SANDS::
 	end @to do:

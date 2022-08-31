@@ -286,11 +286,11 @@ SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
 
 SlateportCity_BattleTentLobby_Text_ExplainTorment:
 	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's TORMENT, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
+	.string "Hey, it's CONFUSE RAY, you hearing me?\p"
+	.string "Like, it'll confuse the target, and it\n"
+	.string "might hurt itself on its turn, see?\p"
 	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+	.string "Is it really that hard to understand?$"
 
 SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
 	.string "I don't really like BUG POKéMON,\n"
