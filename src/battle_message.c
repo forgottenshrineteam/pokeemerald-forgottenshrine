@@ -1839,27 +1839,27 @@ static const u8 sText_SpaceIs[] = _(" is");
 static const u8 sText_ApostropheS[] = _("'s");
 
 // For displaying names of invalid moves
-static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][17] =
+static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][18] =
 {
-    [TYPE_NORMAL]   = _("a NORMAL move"),
-    [TYPE_FIGHTING] = _("a FIGHTING move"),
-    [TYPE_FLYING]   = _("a FLYING move"),
-    [TYPE_POISON]   = _("a POISON move"),
-    [TYPE_GROUND]   = _("a GROUND move"),
-    [TYPE_ROCK]     = _("a ROCK move"),
-    [TYPE_BUG]      = _("a BUG move"),
-    [TYPE_GHOST]    = _("a GHOST move"),
-    [TYPE_STEEL]    = _("a STEEL move"),
+    [TYPE_NORMAL]   = _("a Normal move"),
+    [TYPE_FIGHTING] = _("a Fighting move"),
+    [TYPE_FLYING]   = _("a Flying move"),
+    [TYPE_POISON]   = _("a Poison move"),
+    [TYPE_GROUND]   = _("a Ground move"),
+    [TYPE_ROCK]     = _("a Rock move"),
+    [TYPE_BUG]      = _("a Bug move"),
+    [TYPE_GHOST]    = _("a Ghost move"),
+    [TYPE_STEEL]    = _("a Steel move"),
     [TYPE_MYSTERY]  = _("a ??? move"),
-    [TYPE_FIRE]     = _("a FIRE move"),
-    [TYPE_WATER]    = _("a WATER move"),
-    [TYPE_GRASS]    = _("a GRASS move"),
-    [TYPE_ELECTRIC] = _("an ELECTRIC move"),
-    [TYPE_PSYCHIC]  = _("a PSYCHIC move"),
-    [TYPE_ICE]      = _("an ICE move"),
-    [TYPE_DRAGON]   = _("a DRAGON move"),
-    [TYPE_DARK]     = _("a DARK move"),
-    [TYPE_FAIRY]    = _("a FAIRY move"),
+    [TYPE_FIRE]     = _("a Fire move"),
+    [TYPE_WATER]    = _("a Water move"),
+    [TYPE_GRASS]    = _("a Grass move"),
+    [TYPE_ELECTRIC] = _("an Electric move"),
+    [TYPE_PSYCHIC]  = _("a Psychic move"),
+    [TYPE_ICE]      = _("an Ice move"),
+    [TYPE_DRAGON]   = _("a Dragon move"),
+    [TYPE_DARK]     = _("a Dark move"),
+    [TYPE_FAIRY]    = _("a Fairy move"),
 };
 
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");
