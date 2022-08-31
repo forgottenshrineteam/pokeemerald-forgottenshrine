@@ -4303,6 +4303,7 @@ const u16 gEggMoves[] = {
               MOVE_STEEL_BEAM,
               MOVE_ZEN_HEADBUTT),
 
+#if P_NEW_POKEMON == TRUE
     egg_moves(TURTWIG,
               MOVE_AMNESIA,
               MOVE_BODY_SLAM,
