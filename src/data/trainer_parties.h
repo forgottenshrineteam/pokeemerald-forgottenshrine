@@ -10948,9 +10948,9 @@ static const struct TrainerMonItemCustomMoves sParty_Norman2[] = {
     {
     .iv = 255,
     .lvl = 42,
-    .species = SPECIES_LINOONE,
+    .species = SPECIES_OBSTAGOON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_PURSUIT, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_TAIL_WHIP}
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_OBSTRUCT}
     },
     {
     .iv = 255,
@@ -10972,9 +10972,9 @@ static const struct TrainerMonItemCustomMoves sParty_Norman3[] = {
     {
     .iv = 255,
     .lvl = 47,
-    .species = SPECIES_LINOONE,
+    .species = SPECIES_OBSTAGOON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_PURSUIT, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_TAIL_WHIP}
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_OBSTRUCT}
     },
     {
     .iv = 255,
@@ -11010,9 +11010,9 @@ static const struct TrainerMonItemCustomMoves sParty_Norman4[] = {
     {
     .iv = 255,
     .lvl = 52,
-    .species = SPECIES_LINOONE,
+    .species = SPECIES_OBSTAGOON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_PURSUIT, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_TAIL_WHIP}
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_OBSTRUCT}
     },
     {
     .iv = 255,
@@ -11048,9 +11048,9 @@ static const struct TrainerMonItemCustomMoves sParty_Norman5[] = {
     {
     .iv = 255,
     .lvl = 57,
-    .species = SPECIES_LINOONE,
+    .species = SPECIES_OBSTAGOON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_PURSUIT, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_TAIL_WHIP}
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE, MOVE_OBSTRUCT}
     },
     {
     .iv = 255,

@@ -16776,6 +16776,7 @@ static const struct LevelUpMove sDottlerLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sOrbeetleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_SIGNAL_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_REFLECT),
     LEVEL_UP_MOVE( 1, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
