@@ -803,7 +803,6 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(RAYQUAZA),
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
-#if P_NEW_POKEMON == TRUE
     SPECIES_TO_NATIONAL(TURTWIG),
     SPECIES_TO_NATIONAL(GROTLE),
     SPECIES_TO_NATIONAL(TORTERRA),
@@ -1450,7 +1449,6 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     [SPECIES_PIKACHU_WORLD_CAP - 1] = NATIONAL_DEX_PIKACHU,
     // Pichu
     [SPECIES_PICHU_SPIKY_EARED - 1] = NATIONAL_DEX_PICHU,
-#endif
     // Unown
     [SPECIES_UNOWN_B - 1] = NATIONAL_DEX_UNOWN,
     [SPECIES_UNOWN_C - 1] = NATIONAL_DEX_UNOWN,
@@ -1487,7 +1485,6 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     [SPECIES_DEOXYS_ATTACK - 1] = NATIONAL_DEX_DEOXYS,
     [SPECIES_DEOXYS_DEFENSE - 1] = NATIONAL_DEX_DEOXYS,
     [SPECIES_DEOXYS_SPEED - 1] = NATIONAL_DEX_DEOXYS,
-#if P_NEW_POKEMON == TRUE
     // Burmy
     [SPECIES_BURMY_SANDY_CLOAK - 1] = NATIONAL_DEX_BURMY,
     [SPECIES_BURMY_TRASH_CLOAK - 1] = NATIONAL_DEX_BURMY,
@@ -1719,7 +1716,6 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER - 1] = NATIONAL_DEX_CALYREX,
     [SPECIES_CALYREX_SHADOW_RIDER - 1] = NATIONAL_DEX_CALYREX,
-#endif
 };
 
 // Assigns all Hoenn Dex Indexes to a National Dex Index
@@ -2079,11 +2075,7 @@ const s8 gNatureStatTable[NUM_NATURES][NUM_NATURE_STATS] =
 #include "data/pokemon/base_stats.h"
 #include "data/pokemon/level_up_learnsets.h"
 #include "data/pokemon/teachable_learnsets.h"
-#if P_NEW_POKEMON == TRUE
 #include "data/pokemon/evolution.h"
-#else
-#include "data/pokemon/evolution_old.h"
-#endif
 #include "data/pokemon/level_up_learnset_pointers.h"
 #include "data/pokemon/teachable_learnset_pointers.h"
 #include "data/pokemon/form_species_tables.h"
@@ -2092,11 +2084,7 @@ const s8 gNatureStatTable[NUM_NATURES][NUM_NATURE_STATS] =
 #include "data/pokemon/form_change_table_pointers.h"
 
 // SPECIES_NONE are ignored in the following two tables, so decrement before accessing these arrays to get the right result
-#if P_ENABLE_DEBUG == TRUE
 const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
-#else
-static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
-#endif
 {
     [SPECIES_BULBASAUR - 1]     = ANIM_V_JUMPS_H_JUMPS,
     [SPECIES_IVYSAUR - 1]       = ANIM_V_STRETCH,
@@ -2484,8 +2472,6 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_RAYQUAZA - 1]      = ANIM_H_SHAKE,
     [SPECIES_JIRACHI - 1]       = ANIM_SWING_CONVEX,
     [SPECIES_DEOXYS - 1]        = ANIM_H_PIVOT,
-
-#if P_NEW_POKEMON == TRUE
     // Gen 4
     [SPECIES_TURTWIG - 1]       = ANIM_V_SLIDE,
     [SPECIES_GROTLE - 1]        = ANIM_H_SLIDE,
@@ -3101,10 +3087,8 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
     [SPECIES_SALAMENCE - 1]  = 70,
     [SPECIES_KYOGRE - 1]     = 60,
     [SPECIES_RAYQUAZA - 1]   = 60,
-#if P_NEW_POKEMON == TRUE
     [SPECIES_TAPU_FINI - 1]  = 5,
     [SPECIES_ROTOM_FAN - 1]  = 7,
-#endif
 };
 
 #define PP_UP_SHIFTS(val)           val,        (val) << 2,        (val) << 4,        (val) << 6
@@ -3529,7 +3513,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
-        #if P_LEGENDARY_PERFECT_IVS >= GEN_6
             if (gBaseStats[species].flags & (FLAG_LEGENDARY | FLAG_MYTHICAL | FLAG_ULTRA_BEAST))
             {
                 iv = MAX_PER_STAT_IVS;
@@ -3570,9 +3553,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                             break;
                     }
                 }
-            }
-        #endif
-        
+            }        
     }
 
     if (gBaseStats[species].abilities[1])
@@ -4115,10 +4096,8 @@ void CalculateMonStats(struct Pokemon *mon)
         else if (currentHP != 0) {
             // BUG: currentHP is unintentionally able to become <= 0 after the instruction below. This causes the pomeg berry glitch.
             currentHP += newMaxHP - oldMaxHP;
-            #ifdef BUGFIX
             if (currentHP <= 0)
                 currentHP = 1;
-            #endif
         }
         else
             return;
@@ -7084,11 +7063,7 @@ u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
 // Neither occur in the base game, but this can happen if
 // any Nature-affected base stat is increased to a value
 // above 248. The closest by default is Shuckle at 230.
-#ifdef BUGFIX
     u32 retVal;
-#else
-    u16 retVal;
-#endif
 
     // Don't modify HP, Accuracy, or Evasion by nature
     if (statIndex <= STAT_HP || statIndex > NUM_NATURE_STATS)

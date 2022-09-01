@@ -309,8 +309,8 @@ static void CreateMonMarkingsSprite(struct Pokemon *);
 static void RemoveAndCreateMonMarkingsSprite(struct Pokemon *);
 static void CreateCaughtBallSprite(struct Pokemon *);
 static void CreateSetStatusSprite(void);
-static void CreateMoveSelectorSprites(u8 idArrayStart);
 static void SpriteCb_MoveSelector(struct Sprite *sprite);
+static void CreateMoveSelectorSprites(u8 idArrayStart);
 static void DestroyMoveSelectorSprites(u8 firstArrayId);
 static void SetMainMoveSelectorColor(u8 whichColor);
 static void KeepMoveSelectorVisible(u8 firstSpriteId);
@@ -4152,6 +4152,28 @@ static void CreateSetStatusSprite(void)
     }
 }
 
+static void SpriteCB_MoveSelector(struct Sprite *sprite)
+{
+    if (sprite->animNum > 3 && sprite->animNum < 7)
+    {
+        sprite->data[1] = (sprite->data[1] + 1) & 0x1F;
+        if (sprite->data[1] > 24)
+            sprite->invisible = TRUE;
+        else
+            sprite->invisible = FALSE;
+    }
+    else
+    {
+        sprite->data[1] = 0;
+        sprite->invisible = FALSE;
+    }
+
+    if (sprite->data[0] == SPRITE_ARR_ID_MOVE_SELECTOR1)
+        sprite->y2 = sMonSummaryScreen->firstMoveIndex * 16;
+    else
+        sprite->y2 = sMonSummaryScreen->secondMoveIndex * 16;
+}
+
 static void CreateMoveSelectorSprites(u8 idArrayStart)
 {
     u8 i;
@@ -4178,28 +4200,6 @@ static void CreateMoveSelectorSprites(u8 idArrayStart)
             gSprites[spriteIds[i]].data[1] = 0;
         }
     }
-}
-
-static void SpriteCB_MoveSelector(struct Sprite *sprite)
-{
-    if (sprite->animNum > 3 && sprite->animNum < 7)
-    {
-        sprite->data[1] = (sprite->data[1] + 1) & 0x1F;
-        if (sprite->data[1] > 24)
-            sprite->invisible = TRUE;
-        else
-            sprite->invisible = FALSE;
-    }
-    else
-    {
-        sprite->data[1] = 0;
-        sprite->invisible = FALSE;
-    }
-
-    if (sprite->data[0] == SPRITE_ARR_ID_MOVE_SELECTOR1)
-        sprite->y2 = sMonSummaryScreen->firstMoveIndex * 16;
-    else
-        sprite->y2 = sMonSummaryScreen->secondMoveIndex * 16;
 }
 
 static void DestroyMoveSelectorSprites(u8 firstArrayId)
