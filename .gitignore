@@ -8,6 +8,7 @@
 *.sa1
 *.ss[0-9]
 *.sg1
+*.sav
 *.1bpp
 *.4bpp
 *.8bpp
@@ -38,3 +39,5 @@ porymap.project.cfg
 *.diff
 *.sym
 *.js
+make.txt
+my ass

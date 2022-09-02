@@ -27326,6 +27326,7 @@ static const u16 sDottlerTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_ENERGY_BALL,
     MOVE_ZEN_HEADBUTT,
+    MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27349,6 +27350,7 @@ static const u16 sOrbeetleTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_ZEN_HEADBUTT,
     MOVE_HYPNOSIS,
+    MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27702,6 +27704,10 @@ static const u16 sToxelTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
+    MOVE_THUNDER,
+    MOVE_THUNDERBOLT,
+    MOVE_TOXIC,
+    MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
 
@@ -27728,6 +27734,7 @@ static const u16 sToxtricityTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_GIGA_IMPACT,
     MOVE_VOLT_TACKLE,
+    MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27741,6 +27748,7 @@ static const u16 sSizzlipedeTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
+    MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
 
@@ -27760,6 +27768,7 @@ static const u16 sCentiskorchTeachableLearnset[] = {
     MOVE_X_SCISSOR,
     MOVE_GIGA_IMPACT,
     MOVE_FLARE_BLITZ,
+    MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
 

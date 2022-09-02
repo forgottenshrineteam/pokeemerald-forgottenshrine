@@ -3338,44 +3338,44 @@ static const u8 sTM65Desc[] = _( // Todo
     "paralyze the foe.");
 
 static const u8 sTM66Desc[] = _( // Todo
-    "Attacks the foe\n"
-    "with sharp blades\n"
-    "or claws.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM67Desc[] = _( // Todo
-    "Flies up on the\n"
-    "first turn, then\n"
-    "attacks next turn.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM68Desc[] = _( // Todo
-    "Creates a huge\n"
-    "wave, then crashes\n"
-    "it down on the foe.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM69Desc[] = _( // Todo
-    "Builds enormous\n"
-    "power, then slams\n"
-    "the foe.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM70Desc[] = _( // Todo
-    "Looses a powerful\n"
-    "blast of light that\n"
-    "reduces accuracy.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM71Desc[] = _( // Todo
-    "A rock-crushingly\n"
-    "tough attack that\n"
-    "may lower Defense.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM72Desc[] = _( // Todo
-    "Attacks the foe\n"
-    "with enough power\n"
-    "to climb waterfalls.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM73Desc[] = _( // Todo
-    "Dives underwater\n"
-    "the 1st turn, then\n"
-    "attacks next turn.");
+    "\n"
+    "\n"
+    ".");
 
 static const u8 sTM74Desc[] = _( // Todo
     "\n"

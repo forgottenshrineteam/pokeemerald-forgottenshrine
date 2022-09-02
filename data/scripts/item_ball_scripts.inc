@@ -3,7 +3,7 @@ Route102_EventScript_ItemPotion::
 	end
 
 Route103_EventScript_ItemGuardSpec::
-	finditem ITEM_TM65
+	finditem ITEM_TM64
 	end
 
 Route103_EventScript_ItemPPUp::
