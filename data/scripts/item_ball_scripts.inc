@@ -107,7 +107,7 @@ Route115_EventScript_ItemSuperPotion::
 	end
 
 Route115_EventScript_ItemTM01::
-	finditem ITEM_TM01
+	finditem ITEM_TM06
 	end
 
 Route115_EventScript_ItemIron::
@@ -347,7 +347,7 @@ RusturfTunnel_EventScript_ItemPokeBall::
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::
-	finditem ITEM_TM54
+	finditem ITEM_MAX_ETHER
 	end
 
 GraniteCave_1F_EventScript_ItemEscapeRope::
@@ -359,7 +359,7 @@ GraniteCave_B1F_EventScript_ItemPokeBall::
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_TM54
 	end
 
 GraniteCave_B2F_EventScript_ItemRareCandy::
@@ -375,7 +375,7 @@ FieryPath_EventScript_ItemFireStone::
 	end
 
 FieryPath_EventScript_ItemTM06::
-	finditem ITEM_TM06
+	finditem ITEM_TM01
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemTM23::

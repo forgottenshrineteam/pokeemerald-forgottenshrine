@@ -4583,8 +4583,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Barny[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Wade[] = {
     {
     .iv = 0,
-    .lvl = 16,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 26,
+    .species = SPECIES_SKRELP,
     }
 };
 
