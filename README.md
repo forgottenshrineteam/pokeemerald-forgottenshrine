@@ -1,28 +1,25 @@
-# pokeemerald Expansion
+# pokeemerald-forgottenshrine
 
-## What is the pokeemerald Expansion?
+## What is the pokeemerald-forgottenshrine?
 
-The pokeemerald Expansion is a collection of feature branches that can be integrated into existing [pokeemerald](https://github.com/pret/pokeemerald) projects.
+pokeemerald-forgottenshrine* is a Pokémon Emerald fangame featuring an expanded Pokédex, modern battle mechanics, and QoL enhancements.
 
-## What feature branches are included?
+## What features are included?
 
-- **[Battle Engine Upgrade](../tree/battle_engine):** Upgrades the battle engine in pokeemerald to newer Generation games' standards. It also adds newer moves and abilities.
-- **[Pokémon Expansion](../tree/pokemon_expansion):** Adds Pokémon from newer Generations and makes them available in the National Dex. It also updates base stats and other Pokémon info.
-- **[Item Expansion](../tree/item_expansion):** Adds items from newer Generations and also updates item effects for field use.
-- **[master](../tree/master):** Combines the above branches into one single branch for the sake of convenience. Note that this branch is only updated once in a while, so you must merge manually if you want the latest features.
+Highlights include:
 
-## Who maintains the project?
+-pokeemerald-expansion (https://github.com/rh-hideout/pokeemerald-expansion) was used as a base, so you can expect all of its enhancements featured here.
+-An expanded Hoenn dex, including all Gen 4 evolutions, plus some extra additions from future and past regions. All Hoenn Pokémon (including mythicals) are obtainable (unless i messed something up, which is a very real possibility).
+-A new set of TMs designed around a casual, single player playthrough (mostly coverage moves, with some status and set-up moves thrown in). They're also reusable!
+-Other miscellaneous QoL tweaks.
 
-The project was originally started by DizzyEgg alongside other contributors.
+Full patchnotes and credits to be featured on the wiki.
 
-The project has now gotten larger and DizzyEgg is now maintaining the project as part of the ROM Hacking Hideout community. Some members of this community are taking on larger roles to help maintain the project.
+## How can I play?
 
-## Can I contribute even if I'm not a member of ROM Hacking Hideout?
+Once I am satisfied with the project, I plan to release an .isp patch to be applied to a (legally obtained/compiled) Pokémon Emerald rom.
+In the meantime, you can follow the instructions at INSTALL.md to compile your own playable rom, simply replace "https://github.com/pret/pokeemerald" with "https://github.com/forgottenshrineteam/pokeemerald-forgottenshrine".
 
-Yes! Contributions are welcome via Pull Requests and they will be reviewed by maintainers. Please note that PRs to master are not accepted, as master is only intended to be a merged branch.
 
-## What is ROM Hacking Hideout?
 
-A Discord-based ROM hacking community that has many members who hack using the disassembly and decompilation projects for Pokémon. Quite a few contributors to the original feature branches by DizzyEgg were members of ROM Hacking Hideout. You can call it RHH for short!
-
-[Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
+*Forgotten shrine not included.

@@ -153,7 +153,7 @@ SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM63
 	goto_if_eq VAR_RESULT, 0, SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief
-	setflag FLAG_RECEIVED_TM46
+	setflag FLAG_RECEIVED_TM63
 	msgbox SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT
 	closemessage
 	goto_if_eq VAR_FACING, DIR_NORTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth

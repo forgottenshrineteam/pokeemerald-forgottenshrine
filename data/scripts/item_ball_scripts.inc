@@ -347,7 +347,7 @@ RusturfTunnel_EventScript_ItemPokeBall::
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::
-	finditem ITEM_MAX_ETHER
+	finditem ITEM_TM54
 	end
 
 GraniteCave_1F_EventScript_ItemEscapeRope::

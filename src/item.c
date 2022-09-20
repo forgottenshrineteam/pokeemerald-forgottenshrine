@@ -29,7 +29,7 @@ EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 #include "data/items.h"
 
 // code
-static u16 GetBagItemQuantity(u16 *quantity)
+u16 GetBagItemQuantity(u16 *quantity)
 {
     return gSaveBlock2Ptr->encryptionKey ^ *quantity;
 }
@@ -577,13 +577,33 @@ void CompactPCItems(void)
 
 void SwapRegisteredBike(void)
 {
-    switch (gSaveBlock1Ptr->registeredItem)
+    switch (gSaveBlock1Ptr->registeredItemSelect)
     {
     case ITEM_MACH_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_ACRO_BIKE;
+        gSaveBlock1Ptr->registeredItemSelect = ITEM_ACRO_BIKE;
         break;
     case ITEM_ACRO_BIKE:
-        gSaveBlock1Ptr->registeredItem = ITEM_MACH_BIKE;
+        gSaveBlock1Ptr->registeredItemSelect = ITEM_MACH_BIKE;
+        break;
+    }
+    
+    switch (gSaveBlock1Ptr->registeredItemL)
+    {
+    case ITEM_MACH_BIKE:
+        gSaveBlock1Ptr->registeredItemL = ITEM_ACRO_BIKE;
+        break;
+    case ITEM_ACRO_BIKE:
+        gSaveBlock1Ptr->registeredItemL = ITEM_MACH_BIKE;
+        break;
+    }
+    
+    switch (gSaveBlock1Ptr->registeredItemR)
+    {
+    case ITEM_MACH_BIKE:
+        gSaveBlock1Ptr->registeredItemR = ITEM_ACRO_BIKE;
+        break;
+    case ITEM_ACRO_BIKE:
+        gSaveBlock1Ptr->registeredItemR = ITEM_MACH_BIKE;
         break;
     }
 }

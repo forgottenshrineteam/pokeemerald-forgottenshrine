@@ -8,7 +8,7 @@ SSTidalRooms_EventScript_SnatchGiver::
 	msgbox SSTidalRooms_Text_NotSuspiciousTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM46
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM49
+	setflag FLAG_RECEIVED_TM46
 	msgbox SSTidalRooms_Text_ExplainSnatch, MSGBOX_DEFAULT
 	release
 	end
