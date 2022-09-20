@@ -146,7 +146,7 @@ MossdeepCity_StevensHouse_EventScript_Letter::
 
 @ Unused, leftover from RS
 MossdeepCity_StevensHouse_EventScript_DiveItemBall::
-	finditem ITEM_TM73
+	finditem ITEM_HM08
 	setflag FLAG_RECEIVED_HM08
 	end
 
@@ -156,9 +156,9 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
 	.string "This is my token of appreciation.\n"
-	.string "It's the TECHNICAL MACHINE DIVE.\p"
+	.string "It's the HIDDEN MACHINE for DIVE.\p"
 	.string "No need to be shy--you've earned\n"
-	.string "this special TM.$"
+	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "STEVEN: While you're using SURF, you\n"

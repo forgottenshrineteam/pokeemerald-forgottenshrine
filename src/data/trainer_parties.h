@@ -2469,7 +2469,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Axle[] = {
     {
     .iv = 100,
     .lvl = 23,
-    .species = SPECIES_SIZZLEPEDE,
+    .species = SPECIES_SIZZLIPEDE,
     }
 };
 
