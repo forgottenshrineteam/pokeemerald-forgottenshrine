@@ -4061,21 +4061,21 @@ static const struct TrainerMonItemCustomMoves sParty_Victoria[] = {
     .iv = 50,
     .lvl = 17,
     .species = SPECIES_ODDISH,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_STUN_SPORE, MOVE_ACID, MOVE_ABSORB, MOVE_GROWTH}
     },
     {
     .iv = 50,
     .lvl = 17,
     .species = SPECIES_ROSELIA,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_STUN_SPORE, MOVE_MEGA_DRAIN, MOVE_POISON_STING, MOVE_GROWTH}
     },
     {
     .iv = 50,
     .lvl = 17,
     .species = SPECIES_TANGELA,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_VINE_WHIP, MOVE_INGRAIN, MOVE_SLEEP_POWDER, MOVE_BIND}
     },
 };
@@ -4234,35 +4234,35 @@ static const struct TrainerMonItemCustomMoves sParty_Vicky[] = {
     .iv = 200,
     .lvl = 20,
     .species = SPECIES_MAKUHITA,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_KNOCK_OFF, MOVE_FORCE_PALM, MOVE_FAKE_OUT, MOVE_SAND_ATTACK}
     },
     {
     .iv = 200,
     .lvl = 20,
     .species = SPECIES_CROAGUNK,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_FEINT_ATTACK, MOVE_REVENGE, MOVE_POISON_STING, MOVE_MUD_SLAP}
     },
     {
     .iv = 200,
     .lvl = 21,
     .species = SPECIES_MACHOP,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_KNOCK_OFF, MOVE_LOW_SWEEP, MOVE_LEER, MOVE_FOCUS_ENERGY}
     },
     {
     .iv = 200,
     .lvl = 21,
     .species = SPECIES_SCRAGGY,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_PAYBACK, MOVE_BRICK_BREAK, MOVE_HEADBUTT, MOVE_SWAGGER}
     },
     {
     .iv = 200,
     .lvl = 22,
     .species = SPECIES_MEDITITE,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_HIGH_JUMP_KICK, MOVE_MEDITATE, MOVE_CONFUSION, MOVE_DETECT}
     }
 };
@@ -8195,33 +8195,33 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Janice[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Vivi[] = {
+static const struct TrainerMonItemCustomMoves sParty_Vivi[] = {
     {
     .iv = 100,
     .lvl = 18,
     .species = SPECIES_MARILL,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_BUBBLE_BEAM, MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_ICY_WIND}
     },
     {
     .iv = 100,
     .lvl = 18,
     .species = SPECIES_SHROOMISH,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_HEADBUTT, MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_LEECH_SEED}
     },
     {
     .iv = 100,
     .lvl = 19,
     .species = SPECIES_NUMEL,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_AMNESIA, MOVE_FLAME_BURST, MOVE_MAGNITUDE, MOVE_GROWL}
     },
     {
     .iv = 100,
     .lvl = 19,
     .species = SPECIES_PIKACHU,
-    .heldItem = ITEM_ORAN_BERRY
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_THUNDER_WAVE, MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_GROWL}
     }
 };
