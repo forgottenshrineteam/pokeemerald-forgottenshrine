@@ -193,6 +193,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 30,
+      "y": 34,
+      "elevation": 3,
+      "item": "ITEM_TM68_CLOSE_COMBAT",
+      "flag": "FLAG_UNUSED_0x020"
     }
   ]
 }

@@ -673,7 +673,7 @@ const struct Item gItems[] =
     {
         .name = _("Ether"),
         .itemId = ITEM_ETHER,
-        .price = 1200,
+        .price = 500,
         .holdEffectParam = 10,
         .description = sEtherDesc,
         .pocket = POCKET_ITEMS,
@@ -688,7 +688,7 @@ const struct Item gItems[] =
     {
         .name = _("Max Ether"),
         .itemId = ITEM_MAX_ETHER,
-        .price = 2000,
+        .price = 1000,
         .holdEffectParam = 255,
         .description = sMaxEtherDesc,
         .pocket = POCKET_ITEMS,
@@ -703,7 +703,7 @@ const struct Item gItems[] =
     {
         .name = _("Elixir"),
         .itemId = ITEM_ELIXIR,
-        .price = 3000,
+        .price = 1500,
         .holdEffectParam = 10,
         .description = sElixirDesc,
         .pocket = POCKET_ITEMS,
@@ -718,7 +718,7 @@ const struct Item gItems[] =
     {
         .name = _("Max Elixir"),
         .itemId = ITEM_MAX_ELIXIR,
-        .price = 4500,
+        .price = 2500,
         .holdEffectParam = 255,
         .description = sMaxElixirDesc,
         .pocket = POCKET_ITEMS,
@@ -8679,10 +8679,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM66] =
+    [ITEM_TM66_LIQUIDATION] =
     {
         .name = _("TM66"),
-        .itemId = ITEM_TM66,
+        .itemId = ITEM_TM66_LIQUIDATION,
         .price = 0,
         .description = sTM66Desc,
         .importance = 1,
@@ -8691,10 +8691,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM67] =
+    [ITEM_TM67_SCALD] =
     {
         .name = _("TM67"),
-        .itemId = ITEM_TM67,
+        .itemId = ITEM_TM67_SCALD,
         .price = 0,
         .description = sTM67Desc,
         .importance = 1,
@@ -8703,10 +8703,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM68] =
+    [ITEM_TM68_CLOSE_COMBAT] =
     {
         .name = _("TM68"),
-        .itemId = ITEM_TM68,
+        .itemId = ITEM_TM68_CLOSE_COMBAT,
         .price = 0,
         .description = sTM68Desc,
         .importance = 1,
@@ -8715,10 +8715,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM69] =
+    [ITEM_TM69_WORK_UP] =
     {
         .name = _("TM69"),
-        .itemId = ITEM_TM69,
+        .itemId = ITEM_TM69_WORK_UP,
         .price = 0,
         .description = sTM69Desc,
         .importance = 1,
@@ -8727,10 +8727,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM70] =
+    [ITEM_TM70_STONE_EDGE] =
     {
         .name = _("TM70"),
-        .itemId = ITEM_TM70,
+        .itemId = ITEM_TM70_STONE_EDGE,
         .price = 0,
         .description = sTM70Desc,
         .importance = 1,
@@ -8739,10 +8739,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM71] =
+    [ITEM_TM71_FOCUS_ENERGY] =
     {
         .name = _("TM71"),
-        .itemId = ITEM_TM71,
+        .itemId = ITEM_TM71_FOCUS_ENERGY,
         .price = 0,
         .description = sTM71Desc,
         .importance = 1,
@@ -8751,10 +8751,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM72] =
+    [ITEM_TM72_HONE_CLAWS] =
     {
         .name = _("TM72"),
-        .itemId = ITEM_TM72,
+        .itemId = ITEM_TM72_HONE_CLAWS,
         .price = 0,
         .description = sTM72Desc,
         .importance = 1,
@@ -8763,10 +8763,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM73_PSYSHOCK] =
     {
         .name = _("TM73"),
-        .itemId = ITEM_TM73,
+        .itemId = ITEM_TM73_PSYSHOCK,
         .price = 0,
         .description = sTM73Desc,
         .importance = 1,
@@ -8775,11 +8775,11 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM74] =
+    [ITEM_TM74_CURSE] =
     {
         .name = _("TM74"),
-        .itemId = ITEM_TM74,
-        .price = 3000,
+        .itemId = ITEM_TM74_CURSE,
+        .price = 0,
         .description = sTM74Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,
@@ -8787,11 +8787,11 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM75] =
+    [ITEM_TM75_FALSE_SWIPE] =
     {
         .name = _("TM75"),
-        .itemId = ITEM_TM75,
-        .price = 3000,
+        .itemId = ITEM_TM75_FALSE_SWIPE,
+        .price = 0,
         .description = sTM75Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,

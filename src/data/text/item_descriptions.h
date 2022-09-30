@@ -3338,54 +3338,54 @@ static const u8 sTM65Desc[] = _( // Todo
     "paralyze the foe.");
 
 static const u8 sTM66Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Slams the foe\n"
+    "with water. May\n"
+    "lower defense.");
 
 static const u8 sTM67Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Shoots boiling\n"
+    "water. May\n"
+    "inflict a burn.");
 
 static const u8 sTM68Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Powerful, but\n"
+    "lowers the user's\n"
+    "defensive stats.");
 
 static const u8 sTM69Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "The user is\n"
+    "roused, raising\n"
+    "Offensive stats.");
 
 static const u8 sTM70Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Stabs the foe with\n"
+    "stones. High\n"
+    "critical-hit ratio.");
 
 static const u8 sTM71Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Focuses power to\n"
+    "raise the\n"
+    "critical-hit ratio.");
 
 static const u8 sTM72Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Sharpens its claws\n"
+    "to raise\n"
+    "Attack and Accuracy.");
 
 static const u8 sTM73Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Attacks with a\n"
+    "psychic wave that\n"
+    "does Phys. damage.");
 
 static const u8 sTM74Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Its effect varies\n"
+    "between GHOST types\n"
+    "and other POKÉMON.");
 
 static const u8 sTM75Desc[] = _( // Todo
-    "\n"
-    "\n"
-    ".");
+    "Attack that leaves\n"
+    "the foe with at\n"
+    "least 1 HP.");
 
 static const u8 sTM76Desc[] = _( // Todo
     "\n"

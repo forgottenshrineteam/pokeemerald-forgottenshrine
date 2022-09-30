@@ -34,7 +34,20 @@ OldaleTown_EventScript_TownSign::
 	end
 
 OldaleTown_EventScript_Girl::
-	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_set FLAG_UNUSED_0x021, OldaleTown_EventScript_ReceivedFalseSwipe
+	msgbox OldaleTown_Text_GiveFalseSwipe, MSGBOX_DEFAULT
+	giveitem ITEM_TM75
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_UNUSED_0x021
+	msgbox OldaleTown_Text_TMExplanation, MSGBOX_DEFAULT
+	release
+	end
+
+OldaleTown_EventScript_ReceivedFalseSwipe:
+	msgbox OldaleTown_Text_TMExplanation, MSGBOX_DEFAULT
+	release
 	end
 
 OldaleTown_EventScript_MartEmployee::
@@ -343,9 +356,17 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
-OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+OldaleTown_Text_GiveFalseSwipe:
+	.string "Oh, are you a rookie trainer?\p"
+	.string "Here, this is a TECHNICAL MACHINE,\n"
+	.string "or TM for short. This one contains the\l"
+	.string "move FALSE SWIPE.$"
+
+OldaleTown_Text_TMExplanation:
+	.string "TMs are useful items that can be used on\n"
+	.string "POKÉMON to teach them specific moves.\p"
+	.string "Also, you can use them as many times\n"
+	.string "as you like!$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"

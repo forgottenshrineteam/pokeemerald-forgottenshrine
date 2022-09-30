@@ -71,7 +71,7 @@ Route111_EventScript_ItemHPUp::
 	end
 
 Route111_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
+	finditem ITEM_TM72
 	end
 
 Route112_EventScript_ItemNugget::
@@ -99,7 +99,7 @@ Route114_EventScript_ItemProtein::
 	end
 
 Route114_EventScript_ItemEnergyPowder::
-	finditem ITEM_STAR_PIECE
+	finditem ITEM_TM73
 	end
 
 Route115_EventScript_ItemSuperPotion::
@@ -127,7 +127,7 @@ Route115_EventScript_ItemPPUp::
 	end
 
 Route116_EventScript_ItemXSpecial::
-	finditem ITEM_X_SP_ATK
+	finditem ITEM_TM69
 	end
 
 Route116_EventScript_ItemEther::
@@ -155,7 +155,7 @@ Route117_EventScript_ItemRevive::
 	end
 
 Route118_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_TM74
 	end
 
 Route119_EventScript_ItemSuperRepel::
@@ -267,7 +267,7 @@ Route127_EventScript_ItemZinc::
 	end
 
 Route127_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_TM67
 	end
 
 Route127_EventScript_ItemRareCandy::
@@ -307,7 +307,7 @@ PetalburgCity_EventScript_ItemMaxRevive::
 	end
 
 PetalburgCity_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_TM71
 	end
 
 MauvilleCity_EventScript_ItemXSpeed::
@@ -327,7 +327,7 @@ MossdeepCity_EventScript_ItemNetBall::
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_TM66
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::
@@ -647,7 +647,7 @@ MagmaHideout_3F_1R_EventScript_ItemNugget::
 	end
 
 MagmaHideout_3F_2R_EventScript_ItemPPMax::
-	finditem ITEM_PP_MAX
+	finditem ITEM_TM70
 	end
 
 MagmaHideout_4F_EventScript_ItemMaxRevive::

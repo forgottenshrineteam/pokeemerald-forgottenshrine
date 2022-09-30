@@ -32,7 +32,7 @@
 
 #define CLEAR_SAVE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_UP)
 #define RESET_RTC_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_LEFT)
-#define BERRY_UPDATE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON)
+#define BERRY_UPDATE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_RIGHT)
 #define A_B_START_SELECT (A_BUTTON | B_BUTTON | START_BUTTON | SELECT_BUTTON)
 
 static void MainCB2(void);
@@ -736,8 +736,7 @@ static void Task_TitleScreenPhase3(u8 taskId)
     {
         SetMainCallback2(CB2_GoToClearSaveDataScreen);
     }
-    else if (JOY_HELD(RESET_RTC_BUTTON_COMBO) == RESET_RTC_BUTTON_COMBO
-      && CanResetRTC() == TRUE)
+    else if (JOY_HELD(RESET_RTC_BUTTON_COMBO) == RESET_RTC_BUTTON_COMBO)
     {
         FadeOutBGM(4);
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
